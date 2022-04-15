@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+
+body{
+    font-size: 14px;
+    line-height: 1.5;
+    color: #3d087b;
+    background: #3d087b;
+    font-family: "Manrope", sans-serif;
+}
+img{
+    max-width: 100%;
+}
+@font-face {
+    font-family: "Bauhaus Hv BT";
+    src: url("./fonts/BauhausHeavyBT.ttf");
+}
+.container{
+    max-width: 1150px;
+    margin: 2em auto;
+    display: flex;
+    justify-content: space-between;
+}
+.inner-container{
+    display: flex;
+    flex-direction: column;
+}
+.maincard{
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 566px;
+    margin-top: 38px;
+}
+.card1{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.card1:nth-child(-n + 3) {
+    margin: 0 0 52px 0;
+}
+.card1:nth-child(-n + 3)::after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 33px;
+    border-left: 2px solid wheat;
+    top: 55px;
+    left: 15px;
+  }
+select{
+    color: #3d087bde;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    width: 281px;
+    height: 45px;
+    letter-spacing: 0.25px;
+    padding-left: 10px;
+    font-weight: 600;
+    margin-left: auto;
+    font-family: "Manrope", sans-serif;
+}
+.label{
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 25px;
+}
+.card2{
+    background-color: #694099;
+    border: none;
+    margin-top: 1.1em;
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    padding: 2px 30px;
+    font-family: "Bauhaus Hv BT", sans-serif;
+    border-radius: 10px;
+}
+.card3{
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    color: #f25cfe;
+}
+.card31{
+    border: none;
+}
+.card31 p{
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+.card {
+    /*border: 1px solid #ededed;*/
+    border-radius: 10px;
+    padding: 20px 30px;
+    background-color: #694099;
+  }
+.card div p:nth-child(2) {
+    color: #5f0089;
+    font-weight: 500;
+}
+.button{
+    color: black;
+    padding: 10px 90px;
+    border-radius: 4px;
+    font-size: 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    display: block;
+    width: 95%;
+    margin: 11px 20px 0 0;
+    background: transparent
+    linear-gradient(113deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%);
+    
+}
+.button:hover {
+    background: transparent
+      linear-gradient(280deg, #6e54ec 0%, #cb52f8 40%, #fc5eff 81%, #f1a7c5 100%);
+    /*padding: 10px 85px;*/
+  }
+.time{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.time2{
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 20px 30px;
+    background: #fff;
+    max-width: 536px;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+.time2 p {
+    color: #3d087b;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.hour,
+.minute,
+.seconds {
+  background: url(./timeline.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 4px 18px;
+  text-align: center;
+  margin: 0 5px;
+}
+.am {
+  background: url(./AM_svg.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px;
+}
+.time3 div p:first-child {
+    color: #8a11bf;
+    font-size: 2.5em;
+    font-weight: 400;
+  }
+.time2 div p:nth-child(2) {
+    color: #5f0089;
+    font-weight: 500;
+}
+.am p {
+    color: #fff !important;
+  }
+
+.time3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.background1,
+.background2 {
+    position: absolute;
+    background: #ffffff;
+    border-radius: 10px;
+  }
+  .background1 {
+    opacity: 71%;
+    z-index: -1;
+    top: 15px;
+    left: 60px;
+    width: 416px;
+  }
+  .background2 {
+    opacity: 22%;
+    z-index: -2;
+    top: 30px;
+    left: 80px;
+    width: 379px;
+  }
+  .timecard {
+    background: #fff;
+    max-width: 536px;
+    height: 130px;
+  }
+.message{
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    padding: 40px 20px;
+    background: #fff;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.message div p:nth-child(2) {
+    color: #5f0089;
+    font-weight: 500;
+  }
+.message h1 {
+    font-family: "Bauhaus Hv BT", sans-serif;
+    color: #8e53f0;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: auto;
+}
+#clock-image{
+    margin-left: 20px;
+}
+
+
+
+
+  @media only screen and (max-width: 1100px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin: 10px auto;
+    }
+  }
+  /* for mobile view Pending*/
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+    }
+    select {
+      width: 140px;
+    }
+  }
+
+
+
+
+
+
+
+

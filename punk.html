@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock js1</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+   <section class="container">
+    <div class="clock">
+        <img src="./clock_logo.png" class="clock.img">
+    </div>
+
+   <div class="mainbox">
+    <div class="box1">
+        <form>
+            <img src="./wake_up.svg" alt="">
+            <label for="morning">Set wake up time</label>
+            <select name="morning" id="morning">
+            <option value="">10 AM - 11 AM</option>
+            <option value="">11 AM - 12 PM</option>
+            <option value="">12 PM - 01 PM</option>
+            <option value="">01 PM - 02 PM</option>
+            <option value="">02 PM - 03 PM</option>
+            <option value="">03 PM - 04 PM</option>
+            <option value="">04 PM - 05 PM</option>
+            <option value="">05 PM - 06 PM</option>
+            <option value="">07 PM - 08 PM</option>
+            <option value="">08 PM - 09 PM</option>
+            <option value="">09 PM - 10 PM</option>
+            <option value="">10 PM - 11 PM</option>
+            </select>
+        </form>
+    </div>
+    <div class="box2">
+        <form>
+            <img src="./lunch_time.svg" alt="">
+            <label for="morning">Set wake up time</label>
+            <select name="morning" id="morning">
+            <option value="">10 AM - 11 AM</option>
+            <option value="">11 AM - 12 PM</option>
+            <option value="">12 PM - 01 PM</option>
+            <option value="">01 PM - 02 PM</option>
+            <option value="">02 PM - 03 PM</option>
+            <option value="">03 PM - 04 PM</option>
+            <option value="">04 PM - 05 PM</option>
+            <option value="">05 PM - 06 PM</option>
+            <option value="">07 PM - 08 PM</option>
+            <option value="">08 PM - 09 PM</option>
+            <option value="">09 PM - 10 PM</option>
+            <option value="">10 PM - 11 PM</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="box3">
+        <form>
+            <img src="./nap_time.svg" alt="">
+            <label for="morning">Set wake up time</label>
+            <select name="morning" id="morning">
+            <option value="">10 AM - 11 AM</option>
+            <option value="">11 AM - 12 PM</option>
+            <option value="">12 PM - 01 PM</option>
+            <option value="">01 PM - 02 PM</option>
+            <option value="">02 PM - 03 PM</option>
+            <option value="">03 PM - 04 PM</option>
+            <option value="">04 PM - 05 PM</option>
+            <option value="">05 PM - 06 PM</option>
+            <option value="">07 PM - 08 PM</option>
+            <option value="">08 PM - 09 PM</option>
+            <option value="">09 PM - 10 PM</option>
+            <option value="">10 PM - 11 PM</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="box4">
+        <form>
+            <img src="./lunch_time.svg" alt="">
+            <label for="morning">Set wake up time</label>
+            <select name="morning" id="morning">
+            <option value="">10 AM - 11 AM</option>
+            <option value="">11 AM - 12 PM</option>
+            <option value="">12 PM - 01 PM</option>
+            <option value="">01 PM - 02 PM</option>
+            <option value="">02 PM - 03 PM</option>
+            <option value="">03 PM - 04 PM</option>
+            <option value="">04 PM - 05 PM</option>
+            <option value="">05 PM - 06 PM</option>
+            <option value="">07 PM - 08 PM</option>
+            <option value="">08 PM - 09 PM</option>
+            <option value="">09 PM - 10 PM</option>
+            <option value="">10 PM - 11 PM</option>
+            </select>
+        </form>
+    </div>
+</div>
+
+     <div class="card1">
+         <h1>Good Morning !! wake up !!</h1>
+     </div>
+
+     <div class="card2">
+         <div>
+             <a href="" class="button">Set Alarm</a>
+         </div>
+
+         <div class="card3">
+             <p>Wake Up Time : 10AM - 11AM</p>
+             <p>Lunch Time : 12PM - 1PM</p>
+             <p>Nap Time : 4PM - 5PM</p>
+             <p>Night Time : 8PM - 9PM</p>
+         </div>
+     </div>
+
+
+
+
+
+
+
+   </section>
+</body>
+</html>
+
+
+.clock{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+}
+.mainbox{
+    margin: 20px;
+    position: relative;
+    height: 250px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: white;
+}
+.box1 .box2 .box3 .box4{
+    position: absolute;
+
+}
+select {
+    color: #3d087bde;
+    border: 1px solid #ededed;
+    border-radius: 4px;
+    width: 281px;
+    height: 45px;
+    letter-spacing: 0.25px;
+    padding-left: 10px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    margin-left: auto;
+  }
+  label {
+    font-size: 21px;
+    font-weight: 500;
+    margin-left: 25px;
+  }
+  .card1{
+      background-color: #694099;
+      border: none;
+      margin-top: 1.1em;
+      width: 500px;
+      height: 50px;
+      margin-left: 25px;
+  }
+  .card1 h1{
+      color: white;
+      font-size: 2em;
+      text-transform: uppercase;
+      padding: 2px 0;
+  }
+  .card2{
+      margin-top: 11px;
+      position: relative;
+      height: 250px;
+      width: 500px;
+      border: 1px solid black;
+  }
+  .button{
+      position: absolute;
+      padding: 10px 90px;
+      border-radius: 4px;
+      color: white;
+      font-size: 22px;
+      font-weight: 500;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      margin: 11px 10px 0 0;
+      width: 100px;
+      height: 50px;
+  }
+
+  .card3{
+      position: absolute;
+      border: none;
+      background-color: #694099;
+      font-size: 1.1em;
+      margin-bottom: 5px;
+      color: rgb(226, 43, 226);
+      margin-left: 300px;
+  }
